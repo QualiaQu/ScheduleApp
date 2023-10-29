@@ -6,7 +6,7 @@ data class Lesson(
     val name: String?,
     val lecturer: String?,
     val cabinet: String?,
-    val startTime: LocalTime,
-    val endTime: LocalTime
+    val startTime: LocalTime?,
+    val endTime: LocalTime?
 )
 
