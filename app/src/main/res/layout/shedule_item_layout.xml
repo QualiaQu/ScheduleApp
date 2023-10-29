@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/day_of_week"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lesson_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        tools:text="День недели" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lesson_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_of_week"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Предмет" />
+
+    <!-- Название урока -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lesson_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/day_of_week"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Предмет" />
+
+    <!-- Имя лектора -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/lecturer_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lesson_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Преподаватель" />
+
+    <!-- Номер кабинета -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/cabinet_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lecturer_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Аудитория" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

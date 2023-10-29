@@ -14,7 +14,7 @@ import ru.thever4.lessons.lesson4_2.databinding.FragmentMainBinding
 class MainFragment : Fragment() {
 
     private var binding: FragmentMainBinding? = null
-    private var adapter: ChatsAdapter = ChatsAdapter()
+    private var adapter: DaysAdapter = DaysAdapter()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -26,7 +26,7 @@ class MainFragment : Fragment() {
             addItemDecoration(createItemDecorator())
         }
 
-        adapter.submitList(ChatDataStorage.userChats)
+        adapter.submitList(ScheduleDataStorage.scheduleFirstWeek)
     }
 
     override fun onCreateView(

@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full" />
 
-    <com.google.android.material.textview.MaterialTextView
+     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/chat_username"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
