@@ -7,5 +7,18 @@ enum class Days {
     THURSDAY,
     FRIDAY,
     SATURDAY,
-    SUNDAY
+    SUNDAY;
+
+    override fun toString(): String {
+        return when (this) {
+            MONDAY -> "Понедельник"
+            TUESDAY -> "Вторник"
+            WEDNESDAY -> "Среда"
+            THURSDAY -> "Четверг"
+            FRIDAY -> "Пятница"
+            SATURDAY -> "Суббота"
+            SUNDAY -> "Воскресенье"
+        }
+    }
 }
+
