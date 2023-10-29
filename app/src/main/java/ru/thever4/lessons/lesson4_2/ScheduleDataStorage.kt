@@ -5,7 +5,6 @@ object ScheduleDataStorage {
     val scheduleFirstWeek = listOf(
         Day(
             ofWeek = Days.TUESDAY,
-            startsWith = 5,
             listOf(
                 Lesson(
                     name = "ЭКОНОМИКА ПРОГРАММНОЙ ИНЖЕНЕРИИ (ЛЕК.)",
@@ -32,7 +31,6 @@ object ScheduleDataStorage {
         ),
         Day(
             ofWeek = Days.WEDNESDAY,
-            startsWith = 7,
             listOf(
                 Lesson(
                     name = "УПРАВЛЕНИЕ ИТ-ПРОЕКТАМИ И ЖИЗНЕННЫМ ЦИКЛОМ ПО (ЛЕК.)",
@@ -48,7 +46,6 @@ object ScheduleDataStorage {
         ),
         Day(
             ofWeek = Days.THURSDAY,
-            startsWith = 6,
             listOf(
                 Lesson(
                     name = "АНАЛИЗ ДАННЫХ (ЛЕК.)",
