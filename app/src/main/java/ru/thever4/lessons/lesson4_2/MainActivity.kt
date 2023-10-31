@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         supportFragmentManager.beginTransaction()
-            .replace(binding.fragmentHost.id, MainFragment.newInstance())
+            .replace(binding.fragmentHost.id, DayOfWeekFragment.newInstance())
             .commit()
     }
 }
